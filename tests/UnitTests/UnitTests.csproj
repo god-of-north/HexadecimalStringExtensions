@@ -52,6 +52,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ByteArrayFunctionsTest.cs" />
     <Compile Include="BytesToHexTest.cs" />
     <Compile Include="HexToBytesTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
