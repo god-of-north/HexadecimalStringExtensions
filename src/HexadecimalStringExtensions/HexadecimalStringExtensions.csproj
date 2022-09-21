@@ -4,8 +4,8 @@
     <TargetFrameworks>netstandard1.0;net35</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>GON.HexadecimalStringExtensions</Title>
-    <FileVersion>1.2.0.0</FileVersion>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.1</FileVersion>
+    <AssemblyVersion>1.2.0.1</AssemblyVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/god-of-north/HexadecimalStringExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -13,9 +13,11 @@
     <PackageProjectUrl>https://github.com/god-of-north/HexadecimalStringExtensions</PackageProjectUrl>
     <Description>.NET Extensions to simplify work hexadecimal strings</Description>
     <PackageId>GON.HexadecimalStringExtensions</PackageId>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <Authors>Maksym Lesyk</Authors>
     <Product>GON.HexadecimalStringExtensions</Product>
+    <AssemblyName>GON.HexadecimalStringExtensions</AssemblyName>
+    <RootNamespace>GON.Extensions</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
