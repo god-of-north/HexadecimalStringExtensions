@@ -137,7 +137,7 @@ namespace GON.Extensions
 
         public static bool IsHexDigit(this char ch) => char.IsDigit(ch) || (ch >= 'A' && ch <= 'F') || (ch >= 'a' && ch <= 'f');
 
-        public static bool IsHexString(this string str) => (str.Length % 2 == 0) && !str.Any(ch => !ch.IsHexDigit());
+        public static bool IsHexString(this string str) => (str.Length % 2 == 0) && !str.ToCharArray().Any(ch => !ch.IsHexDigit());
 
         public static byte[] PadLeft(this byte[] arr, int pad)
         {
@@ -164,7 +164,7 @@ namespace GON.Extensions
         {
             int count = (int)Math.Ceiling((double)str.Length / size);
             for (int i = 0; i < count; i++)
-                yield return new string(str.Skip(size * i).Take(size).ToArray());
+                yield return new string(str.ToCharArray().Skip(size * i).Take(size).ToArray());
         }
 
         public static bool Compare(this IEnumerable<byte> pV1, IEnumerable<byte> pV2, bool bCompareLength = true)
